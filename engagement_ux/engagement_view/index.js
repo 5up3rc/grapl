@@ -1,4 +1,4 @@
-const engagement_edge = "";
+const engagement_edge = "https://mv92gmusv4.execute-api.us-east-1.amazonaws.com/prod/";
 
 if (engagement_edge.length === 0) {
     console.assert("Engagement Edge URL can not be empty. Run build.sh");

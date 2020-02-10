@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-</head>
-<body>
-
-    <div>
-
-        <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" id="uname" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" id="psw" required>
-
-            <button type="submit" id="submitbtn">Login</button>
-        </div>
-    </div>
-
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grapl </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css"/>
     <script type="text/javascript"
             src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer type="module" src="index.js"></script>
+    <!--    <script src="main.js" defer></script>-->
+</head>
 
-    <script defer type="module" src="index.js" ></script>
+    <body>
+        <div class="loginPage">
+            <div class="loginImg">
+                <h1 class = "title">Grapl</h1>
+            </div>
 
-</body>
+            <div class="loginForm">
+                <div id = "formOverlay">
+                    <h2 class="loginTitle">Sign In</h2>
+                    <hr>
+                    <form>
+                        <input type="text" placeholder="Username" id="uname" required> <br/>
+                        <input type="password" placeholder="Password" id="psw" required> <br/>
+                    </form>
+                    <div class="tooltip">Forgot Password?
+                        <span class="tooltiptext">Please reset password in AWS Console</span>
+                    </div>
+                    <button type="submit" id="submitbtn">Login</button>
+
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

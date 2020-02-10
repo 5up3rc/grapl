@@ -1,0 +1,137 @@
+*{
+    font-family: Open Sans;
+}
+
+h1{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 7.24rem;
+}
+
+h2, label{
+    color: #67ade0;
+}
+
+hr{
+    color: navy;
+}
+
+.title{
+    text-transform: uppercase;
+    /*font-size: 1.5em;*/
+}
+
+.loginPage,
+.loginImg,
+.loginForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginImg{
+    width: 65vw;
+    height: 100vh;
+}
+
+.loginPage{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./images/nodes.jpg");
+    background-size: cover;
+}
+
+.loginForm {
+    width: 45vw;
+    height: 100vh;
+}
+
+.loginTitle{
+    color: navy;
+}
+
+#uname, #psw, #formOverlay{
+    box-shadow: 2px 2px 2px #aaaaaa;
+}
+
+#uname, #psw{
+    width: 11em;
+    font-size: 1.5em;
+    font-family: Lato;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin: .5em;
+    border: none;
+    border-radius: 2px;
+    background: #E8F0FE;
+}
+
+#formOverlay{
+    background: whitesmoke;
+    padding: 3em;
+    border-radius: 3px;
+}
+
+#submitbtn{
+    background: #67ade0;
+    color: oldlace;
+    border: none;
+    border-radius: 2px;
+    width: 91%;
+    padding: 4px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-top: 2em;
+}
+
+::placeholder {
+    color: #404040;
+    opacity: 1;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+    margin-top: 1em;
+    color: navy;
+}
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
