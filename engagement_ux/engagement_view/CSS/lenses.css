@@ -1,12 +1,144 @@
-#lensesTitle, .header, td{
-    text-align: center;
+body{
+    background: #F7F9FA;
+    margin:0;
+}
+
+header{
+    height: 30%;
+    transition: margin-left .5s;
+    box-shadow: 0 2px 2px -2px gray;
+
+}
+
+#grapl{
+    font-size: 2.5em;
     font-family: "Lato";
+    font-weight: bolder;
     text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-right: 30px;
+    text-align: center;
+}
+#graplHdr{
+    color: #041E35;
+    font-size: 2em;
+    font-family: "Lato";
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-right: 30px;
+
+}
+.header, td{
+    text-align: center;
+    font-family: "Open Sans";
+    text-transform: capitalize;
+}
+th{
+    font-size: 1.25em;
+    color: white;
+    background: #5B5C8D;
+    margin: 2em;
+    border-radius: 2px;
+    padding: 8px;
+    letter-spacing: 3px;
+}
+td, tr{
+    border: 1px solid white;
+    margin: 3px;
+    background: white;
+    color: #041E35;
+    font-weight: bolder;
+    border-radius: 2px;
+    padding: 5px;
 }
 
 th{
     width: 33%;
 }
+
 td{
     text-align: center;
+}
+
+
+/*Sidebar*/
+/* The sidebar menu */
+
+#lensSidebar{
+    width: 33%;
+}
+
+#LensHeader{
+    font-family: "Open Sans";
+    color: #041E35;
+    margin-left: 1em;
+}
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #23244E; /* Black*/
+    box-shadow: -10px 0px 20px 1px #aaaaaa;
+    color: white;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 1.25em;
+    letter-spacing: .15em;
+    font-family: "Lato";
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #67ade0;
+    color: white;
+    padding: 10px 15px;
+    margin: 1.5em;
+    border: none;
+    height: 90%;
+    border: 2px solid white;
+    border-radius: 3px;
+
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
 }

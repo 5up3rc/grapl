@@ -7,6 +7,8 @@ console.log('Loaded index.js');
 
 // console.log(`Connecting to ${engagement_edge}`);
 
+
+
 const getLenses = async () => {
     const res = await fetch(`${engagement_edge}getLenses`, {
         method: 'post',
@@ -74,9 +76,9 @@ const getLensesLoop = async () => {
         })
     }
 
-    // setTimeout(async () => {
-    //     await getLensesLoop();
-    // }, 1000)
+    setTimeout(async () => {
+        await getLensesLoop();
+    }, 1000)
 };
 
 const startLensLoop = async(lens) => {

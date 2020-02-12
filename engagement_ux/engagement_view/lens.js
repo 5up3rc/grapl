@@ -9,6 +9,17 @@ console.log('entry.js init');
 //
 // console.log(`Connecting to ${engagement_edge}`);
 
+function openNav() {
+    document.getElementById("lensSidebar").style.width = "33%";
+    document.getElementById("header").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("lensSidebar").style.width = "0";
+    // document.getElementById("header").style.marginLeft = "0";
+}
+
 const BKDRHash = (str) => {
     const seed = 131;
     const seed2 = 137;

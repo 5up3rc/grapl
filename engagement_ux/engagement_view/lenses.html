@@ -1,44 +1,42 @@
 <!doctype html>
 <html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Lenses</title>
+        <meta name="description" content="spooky">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/lenses.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Lenses</title>
-    <meta name="description" content="spooky">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" media="screen" href="CSS/lenses.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
-    <script src="lens.js"></script>
+        <script src="https://unpkg.com/three"></script>
+        <script src="https://unpkg.com/three-spritetext"></script>
+        <script src="https://unpkg.com/3d-force-graph"></script>
+        <script src="https://unpkg.com/force-graph"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.js"></script>
 
-    <script src="lenses.js" defer></script>
-    <!--<link rel="manifest" href="site.webmanifest">-->
-    <!--<link rel="apple-touch-icon" href="icon.png">-->
-    <!-- Place favicon.ico in the root directory -->
+        <script src="lens.js" defer></script>
+        <script src="lenses.js" defer></script>
+    </head>
 
-    <script src="https://unpkg.com/three"></script>
-    <script src="https://unpkg.com/three-spritetext"></script>
-    <script src="https://unpkg.com/3d-force-graph"></script>
-    <script src="https://unpkg.com/force-graph"></script>
+        <body>
+        <header>
+                <button class="openbtn" onclick="openNav()">&#9776; Lenses </button>
 
-</head>
+                <div id="lensSidebar" class="sidebar">
+                    <h1 id="grapl">Grapl</h1>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div id="LenseTable"></div>
+                </div>
 
-<body>
-<h1 id ="lensesTitle">Lenses</h1>
-<div id="LenseTable">
+        </header>
 
-</div>
+        <main>
+            <h1 id="LensHeader"></h1>
+            <div id="nodes"></div>
+            <div id="graph"></div>
+        </main>
 
-<h1 id="LensHeader">Lens</h1>
-<div id="nodes"></div>
-<div id="graph"></div>
+        </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.js"></script>
-
-
-
-
-
-
-</body>
-
+</html>
