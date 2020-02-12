@@ -37,7 +37,7 @@ hr{
 .loginPage{
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("./images/nodes.jpg");
+    background-image: url("../images/nodes.jpg");
     background-size: cover;
 }
 

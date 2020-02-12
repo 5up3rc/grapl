@@ -1,13 +1,13 @@
 // Stylesheets
 console.log('entry.js init');
 
-const engagement_edge = "https://mv92gmusv4.execute-api.us-east-1.amazonaws.com/prod/";
+// const engagement_edge = "https://mv92gmusv4.execute-api.us-east-1.amazonaws.com/prod/";
 
-if (engagement_edge.length === 0) {
-    console.assert("Engagement Edge URL can not be empty. Run build.sh");
-}
-
-console.log(`Connecting to ${engagement_edge}`);
+// if (engagement_edge.length === 0) {
+//     console.assert("Engagement Edge URL can not be empty. Run build.sh");
+// }
+//
+// console.log(`Connecting to ${engagement_edge}`);
 
 const BKDRHash = (str) => {
     const seed = 131;
@@ -480,7 +480,7 @@ const graph2d = (elem) => {
         .onNodeClick(node => {
             const table = (document.getElementById('nodes'));
 
-            const s = nodeToTable(node, Graph);
+            const s = nodeToLensTable(node, Graph);
 
             table.innerHTML = `
                 <div>
@@ -933,7 +933,7 @@ const getNodeType = (node) => {
 };
 
 
-const nodeToTable = (node, Graph) => {
+const nodeToLensTable = (node, Graph) => {
     const hidden = new Set(['id', 'dgraph.type', '__indexColor', 'risks','uid', 'scope', 'name', 'nodeType', 'nodeLabel', 'x', 'y', 'index', 'vy', 'vx', 'fx', 'fy']);
     mapEdgeProps(node, (edgeName, _neighbor) => {
         hidden.add(edgeName)
@@ -1084,21 +1084,21 @@ function randomInt(min, max) // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-document.addEventListener('DOMContentLoaded', async (event) => {
-    console.log('DOMContentLoaded');
-    const lens = new URLSearchParams(window.location.search).get('lens');
-
-    if (lens === null || lens.length <= 0) {
-        console.error('Failed to retrieve egId from url');
-        return;
-    }
-
-    document.getElementById('LensHeader').innerText = `Lens ${lens}`;
-
-    // console.log("Initializing graphManager with, ", initGraph);
-    const graphManager = new GraphManager(
-        {nodes: [], links: []}, '2d'
-    );
-    console.log("Starting update loop");
-    await updateLoop(graphManager, lens);
-});
+// document.addEventListener('DOMContentLoaded', async (event) => {
+//     console.log('DOMContentLoaded');
+//     const lens = new URLSearchParams(window.location.search).get('lens');
+//
+//     if (lens === null || lens.length <= 0) {
+//         console.error('Failed to retrieve egId from url');
+//         return;
+//     }
+//
+//     document.getElementById('LensHeader').innerText = `Lens ${lens}`;
+//
+//     // console.log("Initializing graphManager with, ", initGraph);
+//     const graphManager = new GraphManager(
+//         {nodes: [], links: []}, '2d'
+//     );
+//     console.log("Starting update loop");
+//     await updateLoop(graphManager, lens);
+// });

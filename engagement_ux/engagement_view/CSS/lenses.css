@@ -1,0 +1,12 @@
+#lensesTitle, .header, td{
+    text-align: center;
+    font-family: "Lato";
+    text-transform: uppercase;
+}
+
+th{
+    width: 33%;
+}
+td{
+    text-align: center;
+}
